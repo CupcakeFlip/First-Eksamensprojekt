@@ -1,5 +1,4 @@
 header {
-  background-color: var(--secondary);
   width: 100%;
   position: sticky;
   top: 0;
@@ -7,11 +6,19 @@ header {
 }
 
 .topBar {
+  background-color: color-mix(in srgb, var(--primary) 50%, transparent);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
   position: relative;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.topBar.open {
+  background-color: var(--primary);
+  padding: 8px; /* Reduce padding to make it smaller */
+  transition: all 0.3s ease; /* Smooth transition */
 }
 
 .fa-bars {

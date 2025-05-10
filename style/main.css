@@ -118,6 +118,38 @@ small {
   --accent-800: #660033;
   --accent-900: #33001a;
   --accent-950: #1a000d;
+
+  --gradientPriAcc: linear-gradient(
+    180deg,
+    var(--primary) 0%,
+    var(--accent) 100%
+  );
+  --gradientPriBac: linear-gradient(
+    180deg,
+    var(--primary) 0%,
+    var(--background) 100%
+  );
+  --gradientSecBac: linear-gradient(
+    180deg,
+    var(--secondary) 0%,
+    var(--background) 100%
+  );
+  --gradientSecAcc: linear-gradient(
+    180deg,
+    var(--secondary) 0%,
+    var(--accent) 100%
+  );
+  --gradientSecPriAcc: linear-gradient(
+    180deg,
+    var(--secondary) 0%,
+    var(--primary) 50%,
+    var(--accent) 100%
+  );
+  --gradientBacTex: linear-gradient(
+    180deg,
+    var(--background) 0%,
+    var(--text) 100%
+  );
 }
 
 * {
@@ -132,4 +164,12 @@ small {
   padding: 16px;
 
   text-align: center;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.wrapper {
+  background: var(--gradientSecAcc);
 }

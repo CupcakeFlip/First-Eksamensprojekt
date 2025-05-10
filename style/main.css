@@ -3,7 +3,7 @@ Farvekoder og font størrelser er hentet fra:
 https://www.realtimecolors.com/?colors=140005-fff0f5-ff0080-FF8AC4-75003a&fonts=Cherry%20Swash-Radio%20Canada
 */
 
-@import url("https://fonts.googleapis.com/css?family=Cherry%20Swash:700|Radio%20Canada:400");
+@import url("https://fonts.googleapis.com/css?family=Cherry%20Swash:700|Cherry%20Swash:400|Radio%20Canada:400");
 
 body {
   font-family: "Radio Canada";
@@ -35,14 +35,17 @@ h2 {
 
 h3 {
   font-size: 1.894rem; /* 30.24px */
+  font-weight: 400;
 }
 
 h4 {
   font-size: 1.421rem; /* 22.72px */
+  font-weight: 400;
 }
 
 h5 {
   font-size: 1.066rem; /* 17.12px */
+  font-weight: 400;
 }
 
 small {
@@ -119,4 +122,14 @@ small {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  margin: auto;
+  width: 16%;
+  padding: 16px;
+
+  text-align: center;
 }

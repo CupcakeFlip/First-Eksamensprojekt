@@ -3,22 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA12X8AP///wDjnvkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQABAQEAAAAAAAAAAAECAwMBAwMDAQAAAAAAAAABAgIDAwMDAwEAAAAAAAAAAAECAgMDAgEAAAAAAAAAAQAAAQICAgEAAAEAAAAAAQMBAAABAQEAAAEDAQAAAAECAQAAAAAAAAABAgEAAAAAAQAAAQAAAAEAAAEAAAAAAAAAAQMBAAEDAQAAAAAAAAAAAAECAQABAgEAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA//8AAPEfAADgDwAA4A8AAPAfAADYNwAAjGMAAI/jAADbtwAA8R8AAPEfAAD7vwAA//8AAP//AAA="
+      rel="icon"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="/style/main.css" />
+    <link rel="stylesheet" href="/style/headerFooter.css" />
+    <script
+      src="https://kit.fontawesome.com/f099f94339.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/headerFooter.js"></script>
+    <script src="/js/main.js"></script>
     <title>Home Screen</title>
   </head>
   <body>
     <header>
-      <nav class="topnav">
-        <div class="logo topLogo">
-          <img src="logo" alt="Logo" />
+      <div class="topBar">
+        <div class="menuIcon" onclick="toggleTopMenu()">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
         </div>
-        <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact me</a></li>
+        <div class="logo">
+          <img src="logo.png" alt="Logo" />
+        </div>
+        <div class="spacer"></div>
+        <!-- tom div for balance til højre -->
+      </div>
+
+      <nav class="topNav hidden" id="topNavMenu">
+        <ul class="topMenu">
+          <li>
+            <a class="navLink selected" href="index.html"><h4>Home</h4></a>
+          </li>
+          <li>
+            <a class="navLink" href="aboutMe.html"><h4>About me</h4></a>
+          </li>
+          <li>
+            <a class="navLink" href="projects.html"><h4>Projects</h4></a>
+          </li>
+          <li>
+            <a class="navLink" href="contact.html"><h4>Contact me</h4></a>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <main>
+      <section></section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>© 2025 Tiffany Schilling. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

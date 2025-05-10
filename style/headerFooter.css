@@ -23,8 +23,20 @@ header {
   color: var(--background);
 }
 
+.menuIcon i {
+  transition: transform 0.3s ease; /* Smooth rotation animation */
+}
+
 #topNavMenu {
-  display: none;
+  display: flex; /* Change to flex for animation */
+  flex-direction: column;
+  overflow: hidden; /* Ensures content doesn't overflow during animation */
+  max-height: 0; /* Initially collapsed */
+  transition: max-height 0.3s ease; /* Smooth animation */
+}
+
+#topNavMenu.open {
+  max-height: 300px; /* Adjust to the height of your menu */
 }
 
 .menuIcon,
@@ -40,7 +52,7 @@ header {
 }
 
 .logo img {
-  height: 40px; /* eller hvad du ønsker */
+  height: 40px;
 }
 
 .topNav {

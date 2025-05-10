@@ -1,9 +1,15 @@
 function toggleTopMenu() {
   var menu = document.getElementById("topNavMenu");
-  if (menu.style.display === "none") {
-    menu.style.display = "flex";
-    tran
+  var topBar = document.querySelector(".topBar");
+  var menuIcon = document.querySelector(".menuIcon i");
+
+  if (menu.classList.contains("open")) {
+    menu.classList.remove("open");
+    topBar.classList.remove("collapsed");
+    menuIcon.style.transform = "rotate(0deg)";
   } else {
-    menu.style.display = "none";
+    menu.classList.add("open");
+    topBar.classList.add("collapsed");
+    menuIcon.style.transform = "rotate(90deg)";
   }
 }

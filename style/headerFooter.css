@@ -28,6 +28,7 @@ header {
 
 .fa-bars:hover {
   color: var(--background);
+  cursor: pointer;
 }
 
 .menuIcon i {
@@ -79,8 +80,6 @@ header {
 .topMenu li {
   width: 100%;
 }
-
-
 
 .topMenu a {
   display: block;

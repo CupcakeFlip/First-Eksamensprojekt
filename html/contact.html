@@ -6,14 +6,13 @@
     <link
       href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA12X8AP///wDjnvkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQABAQEAAAAAAAAAAAECAwMBAwMDAQAAAAAAAAABAgIDAwMDAwEAAAAAAAAAAAECAgMDAgEAAAAAAAAAAQAAAQICAgEAAAEAAAAAAQMBAAABAQEAAAEDAQAAAAECAQAAAAAAAAABAgEAAAAAAQAAAQAAAAEAAAEAAAAAAAAAAQMBAAEDAQAAAAAAAAAAAAECAQABAgEAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA//8AAPEfAADgDwAA4A8AAPAfAADYNwAAjGMAAI/jAADbtwAA8R8AAPEfAAD7vwAA//8AAP//AAA="
       rel="icon"
-      type="image/x-icon"
-    />
+      type="image/x-icon" />
     <link rel="stylesheet" href="/style/main.css" />
     <link rel="stylesheet" href="/style/headerFooter.css" />
+    <link rel="stylesheet" href="/style/contact.css" />
     <script
       src="https://kit.fontawesome.com/f099f94339.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="/js/headerFooter.js"></script>
     <script src="/js/main.js"></script>
     <title>Contact</title>
@@ -34,7 +33,7 @@
       <nav class="topNav hidden" id="topNavMenu">
         <ul class="topMenu">
           <li>
-            <a class="navLink " href="index.html"><h4>Home</h4></a>
+            <a class="navLink" href="index.html"><h4>Home</h4></a>
           </li>
           <li>
             <a class="navLink" href="aboutMe.html"><h4>About me</h4></a>
@@ -43,14 +42,75 @@
             <a class="navLink" href="projects.html"><h4>Projects</h4></a>
           </li>
           <li>
-            <a class="navLink selected" href="contact.html"><h4>Contact me</h4></a>
+            <a class="navLink selected" href="contact.html"
+              ><h4>Contact me</h4></a
+            >
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section></section>
+      <section class="contactWrap">
+        <form action="" class="contactForm">
+          <div class="nameBlock block">
+            <div class="label">
+              <label for="name"><h5>Name:</h5></label>
+            </div>
+            <div class="inputBlock name">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required />
+            </div>
+          </div>
+
+          <div class="emailBlock block">
+            <div class="label">
+              <label for="email"><h5>Email:</h5></label>
+            </div>
+            <div class="inputBlock email">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required />
+            </div>
+          </div>
+          <div class="subjectBlock block">
+            <div class="label">
+              <label for="subject"><h5>Subject:</h5></label>
+            </div>
+            <div class="inputBlock subject">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="The Subject"
+                required />
+            </div>
+          </div>
+          <div class="messageBlock block">
+            <div class="label">
+              <label for="message"><h5>Message:</h5></label>
+            </div>
+            <div class="inputBlock message">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="What do you want to ask?"
+                style="height: 200px"
+                required></textarea>
+            </div>
+          </div>
+          <div class="btn submitBtn block">
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer>

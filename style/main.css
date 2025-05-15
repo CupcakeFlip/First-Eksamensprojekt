@@ -59,6 +59,8 @@ small {
   --secondary: #ff8ac4;
   --accent: #75003a;
 
+  --deepPink: #ff1493;
+
   --text-50: #ffe5ec;
   --text-100: #ffccd9;
   --text-200: #ff99b3;
@@ -172,34 +174,6 @@ main {
 
 .container {
   background: var(--gradientSecAcc);
-}
-
-/* koden herunder er taget fra:
-https://getcssscan.com/css-shapes?ref=css-3d-buttons-bottom
-*/
-.heart-with-gradient {
-  width: 50px;
-  display: inline-block;
-  -webkit-mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top
-      left,
-    radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right,
-    linear-gradient(to bottom left, red 43%, transparent 43%) bottom left,
-    linear-gradient(to bottom right, red 43%, transparent 43%) bottom right;
-  -webkit-mask-size: 50% 50%;
-  -webkit-mask-repeat: no-repeat;
-  mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left,
-    radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right,
-    linear-gradient(to bottom left, red 43%, transparent 43%) bottom left,
-    linear-gradient(to bottom right, red 43%, transparent 43%) bottom right;
-  mask-size: 50% 50%;
-  mask-repeat: no-repeat;
-  background: linear-gradient(red, blue);
-}
-
-.heart-with-gradient::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
 }
 
 ul {

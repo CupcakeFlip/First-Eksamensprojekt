@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   background-color: var(--background);
   color: var(--text);
+  line-height: 1.5;
 }
 
 h1,
@@ -26,30 +27,30 @@ html {
 } /* 16px */
 
 h1 {
-  font-size: 3.366rem; /* 53.92px */
+  font-size: 2.442rem; /* 39.04px */
 }
 
 h2 {
-  font-size: 2.525rem; /* 40.32px */
+  font-size: 1.954rem; /* 31.2px */
 }
 
 h3 {
-  font-size: 1.894rem; /* 30.24px */
+  font-size: 1.563rem; /* 24.96px */
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.421rem; /* 22.72px */
+  font-size: 1.25rem; /* 20px */
   font-weight: 400;
 }
 
 h5 {
-  font-size: 1.066rem; /* 17.12px */
+  font-size: 1rem; /* 16px */
   font-weight: 400;
 }
 
 small {
-  font-size: 0.6rem; /* 9.6px */
+  font-size: 0.64rem; /* 10.24px */
 }
 
 :root {
@@ -153,7 +154,7 @@ small {
     var(--text) 100%
   );
 
-  --borderRadius: 10px
+  --borderRadius: 10px;
 }
 
 * {
@@ -172,12 +173,11 @@ small {
 
 main {
   min-height: 100vh;
+  padding: 8px;
 }
-
 .container {
   background: var(--gradientSecAcc);
 }
-
 ul {
   list-style: none;
 }
@@ -185,4 +185,8 @@ ul {
 a {
   text-decoration: none;
   color: var(--text);
+}
+
+.fa-brands {
+  font-size: 40px;
 }

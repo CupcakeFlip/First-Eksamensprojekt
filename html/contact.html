@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/style/main.css" />
     <link rel="stylesheet" href="/style/headerFooter.css" />
     <link rel="stylesheet" href="/style/contact.css" />
+    <link rel="stylesheet" href="/style/grid.css" />
     <script
       src="https://kit.fontawesome.com/f099f94339.js"
       crossorigin="anonymous"></script>
@@ -18,105 +19,134 @@
     <title>Contact</title>
   </head>
   <body>
-    <header>
-      <div class="topBar">
-        <div class="menuIcon" onclick="toggleTopMenu()">
-          <a><i class="fa-solid fa-bars"></i></a>
+    <div class="container">
+      <header>
+        <div class="topBar">
+          <div class="menuIcon" onclick="toggleTopMenu()">
+            <a><i class="fa-solid fa-bars"></i></a>
+          </div>
+          <div class="logo">
+            <img src="logo.png" alt="Logo" />
+          </div>
+          <div class="spacer"></div>
+          <!-- tom div for balance til højre -->
         </div>
-        <div class="logo">
-          <img src="logo.png" alt="Logo" />
+        <nav class="topNav hidden" id="topNavMenu">
+          <ul class="topMenu">
+            <li>
+              <a class="navLink" href="index.html"><h4>Home</h4></a>
+            </li>
+            <li>
+              <a class="navLink" href="aboutMe.html"><h4>About me</h4></a>
+            </li>
+            <li>
+              <a class="navLink" href="projects.html"><h4>Projects</h4></a>
+            </li>
+            <li>
+              <a class="navLink selected" href="contact.html"
+                ><h4>Contact me</h4></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="sec1">
+          <h1>Contact me down below</h1>
+          <p>A good text about if they want to contact me.</p>
+        </section>
+        <section class="sec2 myInfo">
+          <h3>My contact information:</h3>
+          <p class="infoBlock name">
+            <strong>My name:</strong> <br />
+            <i class="fa-solid fa-user"></i>
+            Tiffany Lea Schilling
+          </p>
+          <p class="infoBlock email">
+            <strong>My email:</strong> <br />
+            <i class="fa-solid fa-envelope"></i>
+            TiffanyLea8@gmail.com
+          </p>
+          <p class="infoBlock number">
+            <strong>My phone number: </strong> <br />
+            <i class="fa-solid fa-phone"></i>
+            +45 60 54 13 44
+          </p>
+        </section>
+        <section class="sec3 socialMedia">
+          <strong>Find me on social media:</strong> <br />
+
+          <div class="socialMediaIcons">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+          </div>
+        </section>
+        <section class="contactWrap sec4">
+          <form action="" class="contactForm">
+            <div class="nameBlock block">
+              <div class="label">
+                <label for="name"><h5>Name:</h5></label>
+              </div>
+              <div class="inputBlock name">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required />
+              </div>
+            </div>
+            <div class="emailBlock block">
+              <div class="label">
+                <label for="email"><h5>Email:</h5></label>
+              </div>
+              <div class="inputBlock email">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required />
+              </div>
+            </div>
+            <div class="subjectBlock block">
+              <div class="label">
+                <label for="subject"><h5>Subject:</h5></label>
+              </div>
+              <div class="inputBlock subject">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="The Subject"
+                  required />
+              </div>
+            </div>
+            <div class="messageBlock block">
+              <div class="label">
+                <label for="message"><h5>Message:</h5></label>
+              </div>
+              <div class="inputBlock message">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="What do you want to ask?"
+                  required></textarea>
+              </div>
+            </div>
+            <div class="btn submitBtn block">
+              <input type="submit" value="Send" />
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <div class="footer">
+          <p>© 2025 Tiffany Schilling. All rights reserved.</p>
         </div>
-        <div class="spacer"></div>
-        <!-- tom div for balance til højre -->
-      </div>
-
-      <nav class="topNav hidden" id="topNavMenu">
-        <ul class="topMenu">
-          <li>
-            <a class="navLink" href="index.html"><h4>Home</h4></a>
-          </li>
-          <li>
-            <a class="navLink" href="aboutMe.html"><h4>About me</h4></a>
-          </li>
-          <li>
-            <a class="navLink" href="projects.html"><h4>Projects</h4></a>
-          </li>
-          <li>
-            <a class="navLink selected" href="contact.html"
-              ><h4>Contact me</h4></a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="contactWrap">
-        <form action="" class="contactForm">
-          <div class="nameBlock block">
-            <div class="label">
-              <label for="name"><h5>Name:</h5></label>
-            </div>
-            <div class="inputBlock name">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required />
-            </div>
-          </div>
-
-          <div class="emailBlock block">
-            <div class="label">
-              <label for="email"><h5>Email:</h5></label>
-            </div>
-            <div class="inputBlock email">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required />
-            </div>
-          </div>
-          <div class="subjectBlock block">
-            <div class="label">
-              <label for="subject"><h5>Subject:</h5></label>
-            </div>
-            <div class="inputBlock subject">
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="The Subject"
-                required />
-            </div>
-          </div>
-          <div class="messageBlock block">
-            <div class="label">
-              <label for="message"><h5>Message:</h5></label>
-            </div>
-            <div class="inputBlock message">
-              <textarea
-                id="message"
-                name="message"
-                placeholder="What do you want to ask?"
-                style="height: 200px"
-                required></textarea>
-            </div>
-          </div>
-          <div class="btn submitBtn block">
-            <input type="submit" value="Send" />
-          </div>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer">
-        <p>© 2025 Tiffany Schilling. All rights reserved.</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

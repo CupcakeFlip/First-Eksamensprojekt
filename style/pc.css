@@ -2,9 +2,7 @@
   .menuIcon {
     display: none;
   }
-}
-
-
-* {
-  color: var();
+  main {
+    padding: 16px;
+  }
 }

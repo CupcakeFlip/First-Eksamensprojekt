@@ -42,7 +42,7 @@ header {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -50,7 +50,8 @@ main {
     "sec2 sec2 sec2"
     "sec3 sec3 sec3"
     "sec4 sec4 sec4"
-    "sec5 sec5 sec5";
+    "sec5 sec5 sec5"
+    "sec6 sec6 sec6";
   grid-area: main;
 }
 
@@ -72,4 +73,7 @@ main {
 
 .sec5 {
   grid-area: sec5;
+}
+.sec6 {
+  grid-area: sec6;
 }

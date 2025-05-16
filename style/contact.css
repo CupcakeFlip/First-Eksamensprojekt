@@ -7,7 +7,7 @@
   width: 90%;
   border: 2px solid var(--accent);
   margin: auto;
-  border-radius: 10px;
+  border-radius: var(--borderRadius);
   padding: 16px;
 }
 
@@ -17,9 +17,10 @@ textarea {
   width: 100%;
   padding: 8px;
   border: 2px solid var(--accent);
-  border-radius: 10px;
+  border-radius: var(--borderRadius);
   resize: vertical;
   background-color: var(--background);
+  margin-bottom: 10px;
 }
 
 input[type="text"]:focus,
@@ -27,32 +28,46 @@ input[type="email"]:focus,
 textarea:focus {
   border-color: var(--text);
   outline: none;
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+  box-shadow: 0px 0px 10px 5px
+    color-mix(in srgb, var(--accent) 25%, transparent);
 }
 
 input[type="submit"] {
   background-color: var(--accent);
   width: 100%;
   padding: 8px;
-  border-radius: 10px;
+  border-radius: var(--borderRadius);
   color: var(--background);
   cursor: pointer;
   font-family: "Cherry Swash";
-  border: none;
+  border: 2px solid var(--accent);
+  font-size: 1.066rem;
+  transition: 0.2s ease-in;
 }
 
 input[type="submit"]:hover {
   background-color: var(--secondary);
-  border-color: var(--accent);
   color: var(--text);
+  box-shadow: 0px 0px 10px 5px
+    color-mix(in srgb, var(--accent) 25%, transparent);
+  transition: 0.2s ease-out;
 }
 
-input[type="submit"]:active{
-  
+input[type="submit"]:active {
+  transform: translateY(4px);
 }
-
 
 .block {
   width: 100%;
-  margin: 8px 0;
+}
+
+input[type="text"]:required:invalid,
+input[type="email"]:required:invalid,
+textarea:required:invalid {
+  border-color: var(--accent);
+}
+input[type="text"]:required:valid,
+input[type="email"]:required:valid,
+textarea:required:valid {
+  border-color: var(--secondary);
 }

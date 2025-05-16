@@ -152,6 +152,8 @@ small {
     var(--background) 0%,
     var(--text) 100%
   );
+
+  --borderRadius: 10px
 }
 
 * {

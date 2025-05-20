@@ -46,19 +46,24 @@ header {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto;
-  gap: 0px 0px;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  gap: 16px 0px;
   grid-auto-flow: row;
   grid-template-areas:
+    "titel titel titel"
     "sec1 sec1 sec1"
     "sec2 sec2 sec2"
     "sec3 sec3 sec3"
     "sec4 sec4 sec4"
     "sec5 sec5 sec5"
-    "sec6 sec6 sec6";
+    "sec6 sec6 sec6"
+    "sec7 sec7 sec7";
   grid-area: main;
 }
 
+.titel {
+  grid-area: titel;
+}
 .sec1 {
   grid-area: sec1;
 }
@@ -81,3 +86,7 @@ main {
 .sec6 {
   grid-area: sec6;
 }
+.sec7 {
+  grid-area: sec7;
+}
+

@@ -1,8 +1,54 @@
 @media screen and (min-width: 601px) {
-  /* .menuIcon {
+  .menuIcon,
+  .spacer {
     display: none;
-  } */
+  }
+
+  #topNavMenu {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    overflow: hidden;
+    max-height: none;
+  }
+
+  .topMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
   main {
-    padding: 16px;
+    padding: var(--mPad);
+  }
+
+  .projectBlockEven {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px var(--projectGap);
+    grid-template-areas: "projectText projectImage";
+  }
+  .projectBlockUneven {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px var(--projectGap);
+    grid-template-areas: " projectImage projectText";
+  }
+
+  .projectText {
+    grid-area: projectText;
+  }
+  .projectImg {
+    grid-area: projectImage;
+    width: 100%;
+    height: auto;
+  }
+
+  .imageMe {
+    float: right;
+    width: 50%;
+    height: auto;
   }
 }

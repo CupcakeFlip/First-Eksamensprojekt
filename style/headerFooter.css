@@ -4,6 +4,7 @@ header {
   top: 0;
   z-index: 1000; /* Sørger for at menulinje altid er øverst */
   margin-bottom: 8px;
+  overflow: hidden;
 }
 
 .hidden {
@@ -15,7 +16,7 @@ header {
   left: 50%; /* Når bruges med den under, så er man sikker på elementet er 100% centreret */
   transform: translateX(-50%);
   height: 40px;
-  padding-top: 8px;
+  padding-top: var(--sPad);
 }
 
 .logoTop {
@@ -26,7 +27,6 @@ header {
   width: 600px;
   height: 50px;
   background-size: 600px 1650px;
-
   animation: logoTopAni 5s steps(33) 5;
   z-index: 0;
 }
@@ -46,7 +46,7 @@ header {
   height: 60px;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: var(--mPad);
   position: relative;
   transition: all 0.3s ease; /* Smooth transition */
   box-shadow: 0px -10px 25px 0px color-mix(
@@ -58,7 +58,7 @@ header {
 
 .topBar.open {
   background-color: var(--primary);
-  padding: 8px; /* Reduce padding to make it smaller */
+  padding: var(--sPad); /* Reduce padding to make it smaller */
   height: 40px;
   transition: all 0.3s ease; /* Smooth transition */
 
@@ -136,7 +136,7 @@ header {
 
 .topMenu a {
   display: block;
-  padding: 16px;
+  padding: var(--mPad);
   color: var(--text);
   text-align: center;
   text-decoration: none;
@@ -161,7 +161,7 @@ footer {
   background-color: var(--accent);
   color: var(--background);
   text-align: center;
-  padding: 16px;
+  padding: var(--mPad);
   align-items: center;
 }
 

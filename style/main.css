@@ -155,6 +155,11 @@ small {
   );
 
   --borderRadius: 10px;
+  --xsPad: 4px;
+  --sPad: 8px;
+  --mPad: 16px;
+  --lPad: 32px;
+  --projectGap: 8px;
 }
 
 * {
@@ -163,17 +168,9 @@ small {
   padding: 0;
 }
 
-.center {
-  margin: auto;
-  width: 16%;
-  padding: 16px;
-
-  text-align: center;
-}
-
 main {
   min-height: 100vh;
-  padding: 8px;
+  padding: var(--sPad);
 }
 .container {
   background: var(--gradientSecAcc);
@@ -189,4 +186,16 @@ a {
 
 .fa-brands {
   font-size: 40px;
+}
+
+.programsIKnowIcon {
+  width: 50%;
+  height: auto;
+}
+
+.programsIKnow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px 0;
 }

@@ -9,8 +9,8 @@
       type="image/x-icon" />
     <link rel="stylesheet" href="/style/main.css" />
     <link rel="stylesheet" href="/style/headerFooter.css" />
-    <link rel="stylesheet" href="/style/contact.css" />
     <link rel="stylesheet" href="/style/grid.css" />
+    <link rel="stylesheet" href="/style/pc.css" />
     <script
       src="https://kit.fontawesome.com/f099f94339.js"
       crossorigin="anonymous"></script>
@@ -25,8 +25,13 @@
           <div class="menuIcon" onclick="toggleTopMenu()">
             <a><i class="fa-solid fa-bars"></i></a>
           </div>
-          <div class="logo">
-            <img src="logo.png" alt="Logo" />
+          <div class="logoTop">
+            <a href="index.html" class="logoLink"
+              ><img
+                src="/images/logoBac.svg"
+                alt="Logo"
+                class="logoImg hidden" />
+            </a>
           </div>
           <div class="spacer"></div>
           <!-- tom div for balance til højre -->
@@ -43,13 +48,12 @@
               <a class="navLink" href="projects.html"><h4>Projects</h4></a>
             </li>
             <li>
-              <a class="navLink selected" href="contact.html"
-                ><h4>Contact me</h4></a
-              >
+              <a class="navLink" href="contact.html"><h4>Contact me</h4></a>
             </li>
           </ul>
         </nav>
       </header>
+
       <main>
         <section class="sec1">
           <h1>Contact me down below</h1>
@@ -143,8 +147,38 @@
         </section>
       </main>
       <footer>
-        <div class="footer">
+        <div class="footerInfo">
+          <p>Tiffany Schilling</p>
+          <p>Tiffanylea8@gmail.com</p>
+          <p>60 54 13 44</p>
+        </div>
+
+        <div class="footerLinksContainer">
+          <ul class="footerLinks">
+            <li>
+              <a class="footerLink" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="footerLink" href="aboutMe.html">About me</a>
+            </li>
+            <li>
+              <a class="footerLink" href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a class="footerLink" href="contact.html">Contact me</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footerCopy">
           <p>© 2025 Tiffany Schilling. All rights reserved.</p>
+        </div>
+        <div class="footerLogo">
+          <a href="index.html" class="footerLogoLink">
+            <img
+              src="/images/logoBacSide.svg"
+              alt="logo"
+              class="footerLogoImg" />
+          </a>
         </div>
       </footer>
     </div>

@@ -13,13 +13,13 @@
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr auto;
   grid-template-rows: 2fr 1fr;
   gap: 8px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "info navigation"
-    "copy copy";
+    "info navigation logo"
+    "copy copy copy";
   grid-area: footer;
 }
 
@@ -33,6 +33,10 @@ footer {
 
 .footerLinks {
   grid-area: navigation;
+}
+
+.footerLogo {
+  grid-area: logo;
 }
 
 header {

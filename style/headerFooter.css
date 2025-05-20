@@ -27,7 +27,7 @@ header {
   height: 50px;
   background-size: 600px 1650px;
 
-  animation: logoTopAni 5s steps(33) infinite;
+  animation: logoTopAni 5s steps(33) 5;
   z-index: 0;
 }
 
@@ -162,4 +162,14 @@ footer {
   color: var(--background);
   text-align: center;
   padding: 16px;
+  align-items: center;
+}
+
+.footerLink {
+  color: var(--background);
+}
+
+.footerLogoImg {
+  width: auto;
+  height: 100px;
 }

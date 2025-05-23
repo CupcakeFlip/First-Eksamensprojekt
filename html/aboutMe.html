@@ -8,14 +8,14 @@
       rel="icon"
       type="image/x-icon" />
     <link rel="stylesheet" href="/style/main.css" />
+    <link rel="stylesheet" href="/style/aboutMe.css" />
     <link rel="stylesheet" href="/style/headerFooter.css" />
     <link rel="stylesheet" href="/style/grid.css" />
     <link rel="stylesheet" href="/style/pc.css" />
     <script
       src="https://kit.fontawesome.com/f099f94339.js"
       crossorigin="anonymous"></script>
-    <script src="/js/headerFooter.js"></script>
-    <script src="/js/main.js"></script>
+
     <title>About me</title>
   </head>
   <body>
@@ -23,7 +23,7 @@
       <header>
         <div class="topBar">
           <div class="menuIcon" onclick="toggleTopMenu()">
-            <a><i class="fa-solid fa-bars"></i></a>
+            <i class="fa-solid fa-bars"></i>
           </div>
           <div class="logoTop">
             <a href="/html/index.html" class="logoLink"
@@ -64,7 +64,10 @@
         </section>
         <section class="sec1 aboutMeSection">
           <div class="imageMe">
-            <img src="/images/placeholder.svg" alt="placeholder" />
+            <img
+              src="/images/ofMe/portrait (1).webp"
+              alt="placeholder"
+              class="webp" />
           </div>
           <div class="textAboutMe">
             <p>
@@ -75,7 +78,7 @@
 
               During high school (HTX), I was introduced to programming with
               Python and C++, as well as web design using HTML, CSS, and
-              JavaScript. I quickly fell in love with frontend development -
+              JavaScript. I quickly fell in love with frontend development,
               especially the visual and interactive aspects of creating
               websites. <br />
 
@@ -97,48 +100,60 @@
         </section>
         <section class="sec2">
           <h2>Programs i'm experienced with:</h2>
-
-          <div class="programsIKnow">
-            <img
-              src="/images/figma.svg"
-              alt="Figma"
-              class="programsIKnowIcon" />
-            <h5>Figma</h5>
-          </div>
-          <div class="programsIKnow">
-            <img
-              src="/images/wordpress.svg"
-              alt="Wordpress"
-              class="programsIKnowIcon" />
-            <h5>Wordpress</h5>
-          </div>
-          <div class="programsIKnow">
-            <img
-              src="/images/unity.svg"
-              alt="Unity"
-              class="programsIKnowIcon" />
-            <h5>Unity</h5>
-          </div>
-          <div class="programsIKnow">
-            <img
-              src="/images/html-5.svg"
-              alt="Html, Css, js"
-              class="programsIKnowIcon" />
-            <h5>Html, css og JavaScript</h5>
-          </div>
-          <div class="programsIKnow">
-            <img
-              src="/images/illustrator.svg"
-              alt="Illustrator"
-              class="programsIKnowIcon" />
-            <h5>Illustrator</h5>
-          </div>
-          <div class="programsIKnow">
-            <img
-              src="/images/indesign.svg"
-              alt="Indesign"
-              class="programsIKnowIcon" />
-            <h5>Indesign</h5>
+          <div class="sec2Wrap">
+            <aside class="programsIKnowWrapper">
+              <div class="programsIKnow">
+                <img
+                  src="/images/figma.svg"
+                  alt="Figma"
+                  class="programsIKnowIcon"
+                  data-info="I started using Figma during high school to visually communicate my ideas and design concepts. It quickly became my go-to tool for wireframing and prototyping, helping me bring product visions to life more clearly and efficiently." />
+                <h5>Figma</h5>
+              </div>
+              <div class="programsIKnow">
+                <img
+                  src="/images/wordpress.svg"
+                  alt="Wordpress"
+                  class="programsIKnowIcon"
+                  data-info="Throughout my multimedia design studies, I've worked extensively with WordPress. I find it intuitive to use, and I'm confident in customizing layouts and themes to match specific design goals." />
+                <h5>Wordpress</h5>
+              </div>
+              <div class="programsIKnow">
+                <img
+                  src="/images/unity.svg"
+                  alt="Unity"
+                  class="programsIKnowIcon"
+                  data-info="I started working with Unity during my studies at SDU, where I developed two vertical slice games. These projects focused primarily on implementing core mechanics and gameplay features, rather than building full, polished games. I also created several smaller prototypes to explore different ideas and interaction models. Through this, I gained hands-on experience with C# scripting and designing interactive functionality within a game engine environment." />
+                <h5>Unity</h5>
+              </div>
+              <div class="programsIKnow">
+                <img
+                  src="/images/html-5.svg"
+                  alt="Html, Css, js"
+                  class="programsIKnowIcon"
+                  data-info="My first experience with HTML, CSS, and JavaScript was through an online course by SheCodes in 2020. I later deepened my skills in high school, where I built a website as part of an exam project, integrating an API to create dynamic content. Since then, I've continued developing my frontend skills through both education and personal projects." />
+                <h5>Html, CSS, JavaScript</h5>
+              </div>
+              <div class="programsIKnow">
+                <img
+                  src="/images/illustrator.svg"
+                  alt="Illustrator"
+                  class="programsIKnowIcon"
+                  data-info="In Illustrator, I primarily work with SVG files, modifying colors and adapting visuals for various uses. I've also created original vector graphics for academic reports and multimedia projects, contributing to both the visual identity and content clarity." />
+                <h5>Illustrator</h5>
+              </div>
+              <div class="programsIKnow">
+                <img
+                  src="/images/indesign.svg"
+                  alt="Indesign"
+                  class="programsIKnowIcon"
+                  data-info="I regularly use InDesign for designing academic reports and printed materials. I'm responsible for both the visual layout and technical setup, including page numbering, tables of contents, and consistent typography through custom font libraries. I aim to create clean, professional documents that are easy to navigate and visually cohesive." />
+                <h5>Indesign</h5>
+              </div>
+            </aside>
+            <div id="infoBox">
+              Select a program to the left, to read about my experience with it.
+            </div>
           </div>
         </section>
       </main>
@@ -179,4 +194,6 @@
       </footer>
     </div>
   </body>
+  <script src="/js/headerFooter.js"></script>
+  <script src="/js/main.js"></script>
 </html>

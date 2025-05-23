@@ -1,0 +1,53 @@
+.programsIKnowWrapper {
+  display: flex;
+  flex-flow: column; /* Shorthand for both direction and wrap */
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid var(--primary);
+  border-radius: var(--borderRadius);
+  background-color: var(--accent);
+  color: var(--background);
+  padding: var(--xsPad);
+  grid-area: sidebar;
+}
+
+.programsIKnow {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: var(--sPad);
+  align-items: center;
+  width: 100%;
+  border-radius: var(--borderRadius);
+  cursor: pointer;
+  margin: 2px;
+
+  h5 {
+    text-align: center;
+    font-size: 4vw;
+  }
+}
+
+#infoBox {
+  grid-area: info;
+}
+.sec2Wrap {
+  display: grid;
+  grid-template-columns: 25%;
+  grid-template-areas: "sidebar info";
+  gap: 0 var(--projectGap);
+  background-color: var(--secondary);
+  border-radius: var(--borderRadius);
+  border: 2px solid var(--accent);
+  padding: var(--xsPad);
+  align-items: center;
+}
+
+.programsIKnow:hover {
+  scale: 0.9;
+  transition: all 0.2s ease;
+}
+
+.programsIKnow.active {
+  background-color: var(--secondary);
+  color: var(--text);
+}

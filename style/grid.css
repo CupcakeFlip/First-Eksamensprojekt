@@ -46,8 +46,7 @@ header {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto;
-  gap: 16px 0px;
+
   grid-auto-flow: row;
   grid-template-areas:
     "titel titel titel"
@@ -63,6 +62,7 @@ main {
 
 .titel {
   grid-area: titel;
+  text-align: center;
 }
 .sec1 {
   grid-area: sec1;
@@ -90,3 +90,40 @@ main {
   grid-area: sec7;
 }
 
+.homeScreenTitle {
+  display: grid;
+  h1 {
+    grid-area: titel;
+    text-align: center;
+    line-height: 1.2;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    grid-area: img;
+    border-radius: var(--borderRadius);
+    box-shadow: 10px 10px 10px var(--accent);
+    border: 2px solid var(--primary);
+  }
+  blockquote {
+    grid-area: quote;
+    background-color: var(--accent);
+    color: var(--background);
+    border-radius: var(--borderRadius);
+    border: 2px solid var(--primary);
+    padding: var(--sPad);
+    text-align: center;
+    align-content: center;
+    box-shadow: -10px 10px 10px var(--accent);
+    margin-bottom: 8px;
+  }
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: var(--projectGap) var(--projectGap);
+
+  grid-template-areas:
+    "titel img"
+    "quote quote";
+  justify-content: center;
+  align-items: center;
+}

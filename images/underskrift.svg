@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.37 17.87">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        font-family: Neumartha, Neumartha;
+        font-size: 12px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.13em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-2" transform="translate(0 10.34)"><tspan class="cls-3" x="0" y="0">T</tspan><tspan x="5.58" y="0">iff</tspan><tspan class="cls-4" x="16.27" y="0">a</tspan><tspan x="21.16" y="0">nySchilli</tspan><tspan class="cls-1" x="60.72" y="0">n</tspan><tspan x="66.69" y="0">g</tspan></text>
+  </g>
+</svg>

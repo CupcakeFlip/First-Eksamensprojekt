@@ -21,6 +21,7 @@ textarea {
   resize: vertical;
   background-color: var(--background);
   margin-bottom: 10px;
+  caret-color: var(--primary);
 }
 
 input[type="text"]:focus,

@@ -54,7 +54,8 @@ iframe {
 }
 
 .projectBlockUneven,
-.projectBlockEven {
+.projectBlockEven,
+#projectsTitel {
   width: 100%;
   padding: var(--mPad);
 }

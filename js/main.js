@@ -33,16 +33,17 @@ modal1.onclick = function (event) {
 };
 
 const modal2 = document.getElementById("myModal2");
+const modalContent2 = document.getElementById("modalContent2");
 const openBtn2 = document.getElementById("openModal2");
 
 // Open modal on image click
 openBtn2.onclick = function () {
-  modal2.style.display = "block";
+  modal2.style.display = "flex";
 };
 
-// Close modal when clicking outside the iframe box
-window.onclick = function (event) {
-  if (event.target === modal2) {
+// Close modal when clicking outside the content
+modal2.onclick = function (event) {
+  if (!modalContent2.contains(event.target)) {
     modal2.style.display = "none";
   }
 };

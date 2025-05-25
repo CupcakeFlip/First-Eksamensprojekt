@@ -1,0 +1,40 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  > * {
+    flex: 0 0 100%;
+  }
+
+  &:hover .group {
+    animation-play-state: paused;
+  }
+}
+
+.group {
+  display: flex;
+  gap: 16px;
+  padding-right: 16px;
+  will-change: transform;
+  animation: scrolling 15s linear infinite;
+}
+
+.picOfZammy {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

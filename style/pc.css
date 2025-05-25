@@ -19,7 +19,8 @@
   }
 
   main {
-    padding: var(--mPad);
+    padding: var(--lPad);
+    padding-top: 0;
   }
 
   .projectBlockEven {
@@ -28,6 +29,7 @@
     grid-template-rows: auto auto;
     gap: 0px var(--projectGap);
     grid-template-areas: "projectText projectImage";
+    place-items: center;
   }
   .projectBlockUneven {
     display: grid;
@@ -35,6 +37,17 @@
     grid-template-rows: auto auto;
     gap: 0px var(--projectGap);
     grid-template-areas: " projectImage projectText";
+    place-items: center;
+  }
+
+  #projectsContainer {
+    padding: 0;
+  }
+
+  .projectBlockUneven,
+  .projectBlockEven,
+  #projectsTitel {
+    padding: var(--lPad);
   }
 
   .projectText {
@@ -48,28 +61,65 @@
 
   .imageMe {
     float: right;
-    width: 50%;
+    max-width: 50%;
     height: auto;
+    width: auto;
+  }
+
+  img {
+    max-width: 400px;
+  }
+
+  .homeScreenIntro {
+    grid-template-areas:
+      "quote img"
+      "text1 img"
+      "text2 img";
+
+    img {
+      align-self: flex-start;
+      float: right;
+    }
+  }
+
+  /*
+  *  About me   *
+  */
+
+  .programsIKnowWrapper {
+    flex-flow: row;
+  }
+
+  .programsIKnow {
+    h5 {
+      font-size: 1rem;
+    }
+    width: auto;
+    max-width: 100px;
+  }
+  .sec2Wrap {
+    grid-template-areas:
+      "sidebar"
+      "info";
+    gap: var(--projectGap) 0;
+    grid-template-columns: auto;
+  }
+
+  #infoBox {
+    justify-self: center;
+  }
+
+  /* Contact me */
+
+  .mainContact {
+    grid-template-areas:
+      "titel titel" "sec1 sec3"
+      "sec2 sec3";
+    gap: 16px;
   }
 }
 
 /* 
-Todo Front page
-
-On front page, make grid so quote comes up besides picture and under title. Make picture smaller
-
-Make btn bigger
-
-Make zammy smaller
-
-todo About me
-
-make img smaller. 
-change font size on sidebar stuff. 
-And change icons size
-
-input another picture of zammy
-
 
 Todo general
 
@@ -78,16 +128,7 @@ change look of footer
 make nav transparent, like header
 
 
-Todo projects
 
-Inset project 
-inset description
-
-todo contact 
-
-Make good in pc; get the contact fomular up beside my contact information.
-
-make link to github and linkin. 
 
 
 */

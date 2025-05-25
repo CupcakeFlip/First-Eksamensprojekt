@@ -20,15 +20,19 @@
   border-radius: var(--borderRadius);
   cursor: pointer;
   margin: 2px;
-
   h5 {
     text-align: center;
     font-size: 4vw;
   }
 }
 
+.programsIKnowIcon {
+  max-width: 90px;
+}
+
 #infoBox {
   grid-area: info;
+  align-self: start;
 }
 .sec2Wrap {
   display: grid;

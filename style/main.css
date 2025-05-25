@@ -203,8 +203,8 @@ button {
   border: 2px solid var(--primary);
   font-family: "Cherry Swash";
   margin: 4px;
-  /*
-  font-size: 1.066rem; */
+
+  font-size: 1rem;
   transition: 0.2s ease-in;
 }
 
@@ -221,22 +221,37 @@ button:active {
 }
 
 hr {
-  margin: var(--lPad) 0;
+  margin: var(--mPad) 0;
   border-radius: var(--borderRadius);
   border: 2px solid var(--accent);
 }
 
 img {
   width: 100%;
+  height: auto;
 }
 
 .webp {
   border: 2px solid var(--primary);
   border-radius: var(--borderRadius);
+  box-shadow: 10px 10px 10px var(--accent);
 }
 
 .imageMe {
   float: right;
   width: 50%;
   margin: 8px;
+}
+
+blockquote {
+  background-color: var(--accent);
+  color: var(--background);
+  border-radius: var(--borderRadius);
+  border: 2px solid var(--primary);
+  padding: var(--sPad);
+  text-align: center;
+  justify-self: center;
+  box-shadow: -10px 10px 10px var(--accent);
+  margin-bottom: 8px;
+  font-size: 1.1rem;
 }

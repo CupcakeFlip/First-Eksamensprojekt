@@ -2,7 +2,7 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 1000; /* Sørger for at menulinje altid er øverst */
+  z-index: 10; /* Sørger for at menulinje altid er øverst */
   margin-bottom: 8px;
   overflow: hidden;
 }

@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="/style/main.css" />
     <link rel="stylesheet" href="/style/headerFooter.css" />
     <link rel="stylesheet" href="/style/grid.css" />
+    <link rel="stylesheet" href="/style/projects.css" />
     <link rel="stylesheet" href="/style/pc.css" />
     <script
       src="https://kit.fontawesome.com/f099f94339.js"
       crossorigin="anonymous"></script>
-    <script src="/js/headerFooter.js"></script>
-    <script src="/js/main.js"></script>
+
     <title>Projects</title>
   </head>
   <body>
@@ -59,62 +59,153 @@
       </header>
 
       <main id="projectsContainer">
-        <section class="titel">
+        <section class="titel" id="projectsTitel">
           <h1>Projects</h1>
-          <p>Information about what to se on this page.</p>
+          <p>
+            Here you can explore a selection of my past projects to get a better
+            sense of my skills, interests, and what I'm capable of creating.
+          </p>
         </section>
         <section class="sec1 projectBlockUneven">
           <div class="projectText">
-            <h2>First project</h2>
-            <p>Text about the first project</p>
+            <h2>Dating app for dogs</h2>
+            <p>
+              This project is a high-fidelity prototype for a fictional dating
+              app for dogs, designed in Figma. It demonstrates my ability to
+              create intuitive UI layouts and apply visual design principles to
+              a fun, imaginative concept.
+            </p>
           </div>
           <div class="projectImg">
-            <img src="/images/placeholder.svg" alt="placeholder Image" />
+            <img
+              src="/images/projects/datingApp.svg"
+              alt="Dating app for dogs hi-fi prototype" />
           </div>
         </section>
         <section class="sec2 projectBlockEven">
           <div class="projectText">
-            <h2>Second project</h2>
-            <p>Text about the second project</p>
+            <h2>Website for danish mastiff club</h2>
+            <p>
+              I was assigned to design the website for Dansk Mastiff Klub. The
+              project is currently in the early stages, and the Figma wireframes
+              you see here reflect the initial design direction. I'm currently
+              awaiting feedback before moving forward with development.
+            </p>
           </div>
           <div class="projectImg">
-            <img src="/images/placeholder.svg" alt="placeholder Image" />
+            <img
+              src="/images/projects/mastiffKlub.svg"
+              alt="Wireframe of mastiff club website" />
           </div>
         </section>
         <section class="sec3 projectBlockUneven">
           <div class="projectText">
-            <h2>Third project</h2>
-            <p>Text about the third project</p>
+            <h2>Moving art</h2>
+            <p>
+              As part of a workshop, we were tasked with animating a static
+              painting. I chose "The Bachelor Party" by Louis Wain and created a
+              short animation to bring the piece to life. This exercise gave me
+              the chance to work creatively with motion and storytelling through
+              visuals.
+            </p>
           </div>
           <div class="projectImg">
-            <img src="/images/placeholder.svg" alt="placeholder Image" />
+            <video
+              src="/images/projects/mainloop.mp4"
+              autoplay
+              muted
+              loop></video>
           </div>
         </section>
         <section class="sec4 projectBlockEven">
           <div class="projectText">
-            <h2>Fourth project</h2>
-            <p>Text about the fourth project</p>
+            <h2>Interactive story in Unity</h2>
+            <p>
+              In this project, I created an interactive story experience using
+              Unity. Although I didn't create the animations myself, I was
+              responsible for assembling the project, making it interactive, and
+              building the logic behind the experience. Note: The story is in
+              Danish, and it's only available as a Windows download due to
+              compatibility limitations.
+            </p>
           </div>
           <div class="projectImg">
-            <img src="/images/placeholder.svg" alt="placeholder Image" />
+            <iframe
+              class="mole"
+              height="167"
+              frameborder="0"
+              src="https://itch.io/embed/3455230"
+              width="552"
+              ><a href="https://cupcakeflip.itch.io/muldvarp"
+                >Muldvarp by CupcakeFlip</a
+              ></iframe
+            >
           </div>
         </section>
         <section class="sec5 projectBlockUneven">
           <div class="projectText">
-            <h2>Fifth project</h2>
-            <p>Text about the fifth project</p>
+            <h2>SunMood - Weather & Mood Tracker</h2>
+            <p>
+              This website was created in 2023 as part of a project that
+              required API integration. Using a weather API, I built a page that
+              displays the current weather and compares today's sunshine hours
+              with yesterday's. The idea behind SunMood was to help people
+              affected by seasonal depression track their mood alongside
+              sunlight exposure. The plan was to allow users to log their mood,
+              enabling them to see trends over time based on sun levels.
+              <br />
+              <br />
+              <strong>Click the image to view a Figma prototype.</strong>
+            </p>
           </div>
           <div class="projectImg">
-            <img src="/images/placeholder.svg" alt="placeholder Image" />
+            <img
+              src="/images/projects/sunMood.png"
+              alt="Click me"
+              class="clickable-image"
+              id="openModal1" />
+
+            <!-- Modal structure -->
+            <div id="myModal1" class="modal">
+              <div class="modal-content" id="modalContent">
+                <iframe
+                  style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                  width="800"
+                  height="450"
+                  src="https://embed.figma.com/proto/Wc3gsJiNxgpna3FpxGiN78/Wireframing-in-Figma--Copy---Copy-?node-id=413-744&scaling=scale-down-width&content-scaling=fixed&page-id=318%3A731&starting-point-node-id=413%3A744&embed-host=share"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
           </div>
         </section>
         <section class="sec6 projectBlockEven">
           <div class="projectText">
-            <h2>Sixth project</h2>
-            <p>Text about the sixth project</p>
+            <h2>SheCodes project</h2>
+            <p>
+              In 2020, I completed an online coding course through SheCodes.
+              This was my very first website, and the moment I fell in love with
+              frontend development. It sparked my passion for designing and
+              coding user-friendly, functional interfaces.
+              <br />
+              <br />
+              <strong>Click on the image to view the site.</strong>
+            </p>
           </div>
           <div class="projectImg">
-            <img src="/images/placeholder.svg" alt="placeholder Image" />
+            <!-- Modal is from ai -->
+            <img
+              src="/images/projects/sheCodes.png"
+              alt="Click me"
+              class="clickable-image"
+              id="openModal2" />
+
+            <!-- Modal structure -->
+            <div id="myModal2" class="modal">
+              <div class="modal-content">
+                <iframe
+                  src="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/000/108/826/original/Big_Project_SheCodes.html?1601133545"></iframe>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -154,5 +245,7 @@
         </div>
       </footer>
     </div>
+    <script src="/js/headerFooter.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

@@ -73,3 +73,9 @@ video {
 .mole {
   height: auto;
 }
+
+img {
+  max-height: 600px;
+  border: 2px solid var(--primary);
+  border-radius: var(--borderRadius);
+}

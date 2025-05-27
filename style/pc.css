@@ -25,17 +25,17 @@
 
   .projectBlockEven {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    gap: 0px var(--projectGap);
+    gap: 0px 32px;
     grid-template-areas: "projectText projectImage";
     place-items: center;
   }
   .projectBlockUneven {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    gap: 0px var(--projectGap);
+    gap: 0px 32px;
     grid-template-areas: " projectImage projectText";
     place-items: center;
   }

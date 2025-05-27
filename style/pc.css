@@ -75,11 +75,10 @@
       "quote img"
       "text1 img"
       "text2 img";
-
-    img {
-      align-self: flex-start;
-      float: right;
-    }
+  }
+  .homeScreenIntro img {
+    align-self: flex-start;
+    float: right;
   }
 
   /*
@@ -91,12 +90,14 @@
   }
 
   .programsIKnow {
-    h5 {
-      font-size: 1rem;
-    }
     width: auto;
     max-width: 100px;
   }
+
+  .programsIKnow h5 {
+    font-size: 1rem;
+  }
+
   .sec2Wrap {
     grid-template-areas:
       "sidebar"
@@ -118,13 +119,3 @@
     gap: 16px;
   }
 }
-
-/* 
-
-Todo general
-
-change look of footer
-
-make nav transparent, like header
-
-*/

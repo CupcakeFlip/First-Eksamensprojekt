@@ -2,13 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  background-color: color-mix(in srgb, var(--secondary) 50%, transparent);
+  background-color: var(--secondary50);
   justify-content: space-evenly;
   width: 100%;
   border: 2px solid var(--accent);
   margin: auto;
   border-radius: var(--borderRadius);
   padding: 16px;
+}
+
+label {
+  font-family: "Cherry Swash";
 }
 
 input[type="text"],
@@ -29,8 +33,7 @@ input[type="email"]:focus,
 textarea:focus {
   border-color: var(--text);
   outline: none;
-  box-shadow: 0px 0px 10px 5px
-    color-mix(in srgb, var(--accent) 25%, transparent);
+  box-shadow: 0px 0px 10px 5px var(--accent25);
 }
 
 input[type="submit"] {
@@ -49,8 +52,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: var(--secondary);
   color: var(--text);
-  box-shadow: 0px 0px 10px 5px
-    color-mix(in srgb, var(--accent) 25%, transparent);
+  box-shadow: 0px 0px 10px 5px var(--accent25);
   transition: 0.2s ease-out;
 }
 

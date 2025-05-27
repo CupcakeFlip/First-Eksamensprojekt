@@ -3,16 +3,16 @@
   flex-flow: row wrap; /* Shorthand for both direction and wrap */
   justify-content: space-evenly;
   align-items: center;
-  .programsIKnow {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 0 var(--mPad);
-    .programsIKnowIcon {
-      width: 82px;
-    }
-    h5 {
-      max-width: 82px;
-      text-align: center;
-    }
-  }
+}
+.programsIKnow {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 var(--mPad);
+}
+.programsIKnowIcon {
+  width: 82px;
+}
+h5 {
+  max-width: 82px;
+  text-align: center;
 }

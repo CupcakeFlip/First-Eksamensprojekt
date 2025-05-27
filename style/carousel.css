@@ -6,16 +6,10 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 20px 0;
-
-  > * {
-    flex: 0 0 100%;
-  }
-
-  &:hover .group {
-    animation-play-state: paused;
-  }
 }
-
+.carousel:hover .group {
+  animation-play-state: paused;
+}
 .group {
   display: flex;
   gap: 16px;

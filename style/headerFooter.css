@@ -17,7 +17,6 @@ header {
   transform: translateX(-50%);
   height: 40px;
   padding-top: var(--sPad);
- 
 }
 
 .logoTop {
@@ -42,7 +41,7 @@ header {
 }
 
 .topBar {
-  background-color: color-mix(in srgb, var(--primary) 50%, transparent);
+  background-color: var(--primary50);
   display: flex;
   height: 60px;
   justify-content: space-between;
@@ -50,11 +49,7 @@ header {
   padding: var(--mPad);
   position: relative;
   transition: all 0.3s ease; /* Smooth transition */
-  box-shadow: 0px -10px 25px 0px color-mix(
-      in srgb,
-      var(--accent) 50%,
-      transparent
-    ) inset;
+  box-shadow: 0px -10px 25px 0px var(--primary50) inset;
 }
 
 .topBar.open {
@@ -62,13 +57,13 @@ header {
   padding: var(--sPad); /* Reduce padding to make it smaller */
   height: 40px;
   transition: all 0.3s ease; /* Smooth transition */
+}
 
-  .logoImg {
-    display: block;
-  }
-  .logoTop {
-    background-image: none;
-  }
+.topBar .open .logoImg {
+  display: block;
+}
+.topBar .open .logoTop {
+  background-image: none;
 }
 
 .fa-bars {
@@ -95,8 +90,7 @@ header {
 
 #topNavMenu.open {
   max-height: 300px; /* Adjust to the height of your menu */
-  box-shadow: 5px 5px 15px 5px
-    color-mix(in srgb, var(--accent) 50%, transparent);
+  box-shadow: 5px 5px 15px 5px var(--accent50);
 }
 
 .menuIcon,

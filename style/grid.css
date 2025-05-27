@@ -92,19 +92,6 @@ main {
 
 .homeScreenIntro {
   display: grid;
-  img {
-    grid-area: img;
-  }
-  blockquote {
-    grid-area: quote;
-  }
-  .introProjects {
-    grid-area: text1;
-  }
-
-  .introContact {
-    grid-area: text2;
-  }
 
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
@@ -116,4 +103,18 @@ main {
     "text2 text2";
   justify-content: center;
   align-items: center;
+}
+
+.homeScreenIntro img {
+  grid-area: img;
+}
+
+.homeScreenIntro blockquote {
+  grid-area: quote;
+}
+.homeScreenIntro .introProjects {
+  grid-area: text1;
+}
+.homeScreenIntro .introContact {
+  grid-area: text2;
 }

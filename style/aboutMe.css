@@ -20,10 +20,12 @@
   border-radius: var(--borderRadius);
   cursor: pointer;
   margin: 2px;
-  h5 {
-    text-align: center;
-    font-size: 4vw;
-  }
+}
+
+h5 {
+  text-align: center;
+  color: var(--background);
+  font-size: 4vw;
 }
 
 .programsIKnowIcon {
@@ -53,5 +55,7 @@
 
 .programsIKnow.active {
   background-color: var(--secondary);
+}
+.programsIKnow.active h5 {
   color: var(--text);
 }

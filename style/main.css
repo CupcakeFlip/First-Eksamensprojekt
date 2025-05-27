@@ -20,6 +20,7 @@ h4,
 h5 {
   font-family: "Cherry Swash";
   font-weight: 700;
+  color: var(--accent);
 }
 
 html {

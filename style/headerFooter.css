@@ -17,6 +17,7 @@ header {
   transform: translateX(-50%);
   height: 40px;
   padding-top: var(--sPad);
+ 
 }
 
 .logoTop {
@@ -172,4 +173,6 @@ footer {
 .footerLogoImg {
   width: auto;
   height: 100px;
+  border: none;
+  border-radius: 0;
 }

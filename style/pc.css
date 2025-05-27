@@ -25,7 +25,7 @@
 
   .projectBlockEven {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 0px 32px;
     grid-template-areas: "projectText projectImage";
@@ -33,7 +33,7 @@
   }
   .projectBlockUneven {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 0px 32px;
     grid-template-areas: " projectImage projectText";
@@ -55,7 +55,7 @@
   }
   .projectImg {
     grid-area: projectImage;
-    width: 100%;
+
     height: auto;
   }
 
@@ -126,9 +126,5 @@ Todo general
 change look of footer
 
 make nav transparent, like header
-
-
-
-
 
 */
